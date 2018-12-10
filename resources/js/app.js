@@ -6,8 +6,19 @@
  */
 
 require('./bootstrap');
+require("./owl.carousel");
+require("./owl.lazyload");
 
 window.Vue = require('vue');
+import VueRouter from "vue-router";
+
+
+Vue.use(VueRouter);
+
+import BootstrapVue from "bootstrap-vue";
+
+Vue.use(BootstrapVue);
+
 
 /**
  * The following block of code may be used to automatically register your
@@ -17,6 +28,10 @@ window.Vue = require('vue');
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
+const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar }
+]
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
@@ -26,8 +41,12 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
+ * 
  */
 
+const router = new VueRouter({
+    routes // short for `routes: routes`
+})
 const app = new Vue({
-    el: '#app'
-});
+    router
+}).$mount('#app')

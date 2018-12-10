@@ -4,9 +4,22 @@
 
 // Variables
 @import 'variables';
+@import 'lazyload';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/brands.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~flickity/css/flickity.css';
+@import 'dist/assets/owl.carousel.css';
+@import 'dist/assets/owl.theme.default.css';
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+
+
+
 
 .navbar-laravel {
   background-color: #fff;

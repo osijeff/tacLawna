@@ -13942,10 +13942,12 @@ __webpack_require__(67);
 __webpack_require__(68);
 
 window.Vue = __webpack_require__(36);
+// vue router
 
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
 
+// bootstrap-vue
 
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_1_bootstrap_vue__["a" /* default */]);

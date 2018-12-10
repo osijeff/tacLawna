@@ -21,6 +21,7 @@
         "vue": "^2.5.17"
     },
     "dependencies": {
+        "admin-lte": "^2.4.8",
         "bootstrap-vue": "^2.0.0-rc.11",
         "flickity": "^2.1.2",
         "vue-router": "^3.0.2"

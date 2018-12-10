@@ -9,12 +9,16 @@ require('./bootstrap');
 require("./owl.carousel");
 require("./owl.lazyload");
 
+
 window.Vue = require('vue');
+// vue router
 import VueRouter from "vue-router";
 
 
 Vue.use(VueRouter);
 
+
+// bootstrap-vue
 import BootstrapVue from "bootstrap-vue";
 
 Vue.use(BootstrapVue);

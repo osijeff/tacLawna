@@ -6,19 +6,17 @@
  */
 
 require('./bootstrap');
-require("./owl.carousel");
-require("./owl.lazyload");
+
 
 
 window.Vue = require('vue');
 // vue router
 import VueRouter from "vue-router";
-
-
 Vue.use(VueRouter);
 
 
 // bootstrap-vue
+import Vue from "vue";
 import BootstrapVue from "bootstrap-vue";
 
 Vue.use(BootstrapVue);
@@ -37,6 +35,7 @@ const routes = [
     { path: '/bar', component: Bar }
 ]
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('hero-component', require('./components/HeroComponent.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))

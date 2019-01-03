@@ -1,8 +1,509 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Roboto');
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat|Roboto");
 
-$heading-font:    'Libre Baskerville', serif;
-$background-color:rgb(236,240,241);
-$accent-color: rgb(192,57,43);
-$secondary-color: rgb(189,195,199);
-$primary-color: rgb(37,55,71);
+$heading-font: "Libre Baskerville", serif;
+$full-text: "Roboto", sans-serif;
+$sub-heading: "Montserrat", sans-serif;
+$text-color: rgb(15, 15, 15);
+$specific-color: rgb(236, 240, 241);
+$accent-color: rgb(192, 57, 43);
+$secondary-color: rgb(189, 195, 199);
+$primary-color: rgb(37, 55, 71);
+
+.owl-carousel {
+    background-color: $specific-color !important;
+    .owl-theme .owl-dots .owl-dot span {
+        background: $accent-color !important;
+    }
+}
+
+p {
+    font-family: $full-text !important;
+}
+
+h1 h2 h3 {
+    font-family: $heading-font !important;
+}
+
+body {
+    color: $text-color;
+}
+
+.navbar {
+    background-color: $primary-color;
+}
+.navbar-brand {
+    color: $specific-color !important;
+}
+.nav-item a {
+    color: $specific-color !important;
+    text-transform: uppercase;
+    // font-size: 1.3em;
+    transition: 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: $accent-color;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    opacity: 1;
+}
+.dropdown-menu {
+    background-color: $secondary-color;
+}
+
+.dropdown-menu a:hover {
+    color: $primary-color !important;
+}
+
+.btn-primary {
+    background-color: $accent-color;
+}
+.btn-primary:hover {
+    border-color: $accent-color;
+}
+
+.nav-item .btn:hover {
+    background-color: $primary-color !important;
+}
+
+.carousel-item {
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.aboutSection {
+    background-color: $secondary-color;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.aboutSection h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.section-titles {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+.carousel-caption {
+    font-size: 3rem;
+    color: $full-text;
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.give-now {
+    background-color: darkgrey;
+    height: 120px;
+    margin-top: 2em;
+    padding-top: 3%;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// hover in effect for online giving
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+    z-index: 999;
+}
+.card-title {
+    text-transform: uppercase;
+}
+.more-recource {
+    margin: 1em 0px;
+    text-transform: uppercase;
+}
+// upcoming invent section style
+.upcomingEventSecetion {
+    background-color: rgba(0, 0, 0, 0.12);
+    height: auto;
+    padding-top: 3em !important;
+    margin-bottom: 3em;
+    padding-top: 3em !important;
+}
+.upcomingEventSecetion .title {
+    margin-bottom: 1em !important;
+}
+.card .upcoming {
+    display: block;
+    margin-bottom: 40px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.25s;
+}
+.card .upcoming:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-card {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: block;
+    overflow: hidden;
+}
+.img-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.25s ease;
+}
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+.card-title {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 1.65em;
+}
+.card-title a {
+    color: #000;
+    text-decoration: none !important;
+}
+.card-read-more {
+    border-top: 1px solid #d4d4d4;
+}
+.card-read-more a {
+    text-decoration: none !important;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.minister {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+// end of upcoming
+
+// gallery style
+.auto-fit-and-minmax {
+    /*  auto-fit-and-minmax this an advance concept of css grid system. it enables you to create more advance responsive layout*/
+    margin-top: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    grid-auto-rows: 100px;
+    /* grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 100px); what we have here is that  we defined 6 columns and make each colum to take 1 fraction of entire width and 2 rows and each 100px tall. the problem with this one is that is not responsive. what does that mean? even if you are viewing it mobile devinc it will still be 6 column width. so to get around with problem is to charge the grid-template-columns to like so grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            now when u refresh ur page the colums fit nicely across deffrent viewpiont but there is a problem with rows. is only first two rows will have 100px tall while others will just be according to there content. solution: grid-auto-rows: 100px.
+            this is know as implicit rows */
+}
+
+/* image gallery */
+.img-grid {
+    margin-top: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+.horizontal {
+    grid-column: span 2;
+}
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.vertical {
+    grid-row: span 2;
+}
+
+.auto-fit-and-minmax {
+    /*  auto-fit-and-minmax this an advance concept of css grid system. it enables you to create more advance responsive layout*/
+    margin-top: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    /* grid-template-columns: repeat(6, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    grid-auto-rows: 300px;
+    /* grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 100px); what we have here is that  we defined 6 columns and make each colum to take 1 fraction of entire width and 2 rows and each 100px tall. the problem with this one is that is not responsive. what does that mean? even if you are viewing it mobile devinc it will still be 6 column width. so to get around with problem is to charge the grid-template-columns to like so grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            now when u refresh ur page the colums fit nicely across deffrent viewpiont but there is a problem with rows. is only first two rows will have 100px tall while others will just be according to there content. solution: grid-auto-rows: 100px.
+            this is know as implicit rows */
+}
+// contact styling
+address {
+    font-size: 1em;
+    line-height: 1em;
+    margin-top: 1.6em;
+}
+.fa-map-marker-alt {
+    font-size: 2.5em;
+}
+.social {
+    font-size: 2em;
+    margin-right: 0.6em;
+}
+
+.itemeeeeeeeee {
+    background: red;
+}
+
+// footer style
+.footerSection {
+    background: rgb(37, 37, 37);
+    color: aliceblue;
+    padding-top: 2em;
+    font-size: 1.25rem;
+    line-height: 1.6em;
+    margin-top: 2em;
+}
+.linkwraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link-item a {
+    text-decoration: none;
+    line-height: 1.6em;
+}
+.link-item a:hover {
+    background-color: $accent-color;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    opacity: 1;
+    color: #fff;
+}
+
+// textimonial section
+
+.container-fluid {
+    margin: 0 auto;
+}
+.container-fluid .carousel-item {
+    height: 150px;
+}
+.carousel-caption {
+    padding: 0;
+    right: 0;
+    left: 0;
+    color: whitesmoke;
+    height: 350px;
+    font-size: 1.6em !important;
+    text-transform: lowercase;
+}
+.container-fluid .carousel-caption h3 {
+    color: #3d3d3d;
+}
+.container-fluid .carousel-caption p {
+    line-height: 1.6em;
+}
+.container-fluid .carousel-caption .col-sm-3 {
+    display: flex;
+    align-items: center;
+}
+.container-fluid .carousel-caption .col-sm-9 {
+    text-align: left;
+}
+.navi a {
+    text-decoration: none;
+}
+a > .ico {
+    background-color: grey;
+    padding: 10px;
+}
+a:hover > .ico {
+    background-color: #666;
+}
+
+// upcoming event page
+
+.post-slide {
+    overflow: hidden;
+    margin-right: 15px;
+    background-color: #fff !important;
+}
+.post-slide .post-img {
+    float: left;
+    width: 50%;
+    position: relative;
+    margin-right: 30px;
+}
+.post-slide .post-img img {
+    width: 100%;
+    height: auto;
+}
+.post-slide .post-date {
+    background: $accent-color;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 2% 3%;
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.post-slide .date {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+.post-slide .month {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.post-slide .post-review {
+    padding: 5% 3% 1% 0;
+    border-top: 3px solid #38cfd8;
+}
+.post-slide:hover .post-review {
+    border-top-color: $accent-color;
+}
+.post-slide .post-title {
+    margin: 0 0 10px 0;
+}
+.post-slide .post-title a {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+.post-slide .post-title a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+.post-slide .post-bar {
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+}
+.post-slide .post-bar:after,
+.post-slide .post-bar:before {
+    border: 1px solid $primary-color;
+    bottom: -10px;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 36%;
+    width: 25px;
+}
+.post-slide .post-bar:before {
+    border: 1px solid #ec3c6a;
+    right: 32%;
+}
+.post-slide .post-bar li {
+    color: #555;
+    font-size: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.post-slide .post-bar li a {
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ec3c6a;
+}
+.post-slide .post-bar li a:hover {
+    color: #ec3c6a;
+}
+.post-slide .post-bar li i {
+    color: #777;
+    margin-right: 5px;
+}
+.post-slide .post-description {
+    font-size: 12px;
+    line-height: 21px;
+    color: #444454;
+}
+.owl-theme .owl-controls {
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: #fff;
+    border: 2px solid #37a6a4;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #37a6a4;
+}
+@media only screen and (max-width: 990px) {
+    .post-slide .post-img {
+        width: 100%;
+    }
+    .post-slide .post-review {
+        width: 100%;
+        border-bottom: 4px solid #ec3c6a;
+    }
+    .post-slide .post-bar:before {
+        left: 0;
+    }
+    .post-slide .post-bar:after {
+        left: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

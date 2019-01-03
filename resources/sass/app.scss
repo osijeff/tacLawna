@@ -1,9 +1,10 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+$fa-font-path:    "../webfonts";
 
 // Variables
-@import 'custom';
+
 @import 'partials';
 @import 'variables';
 @import 'lazyload';
@@ -11,6 +12,7 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-free/css/brands.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
 @import '~@fortawesome/fontawesome-free/css/regular.css';
 @import '~@fortawesome/fontawesome-free/css/fontawesome.css';
 @import '~flickity/css/flickity.css';
@@ -19,12 +21,13 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
 @import '~animate.css/animate.css';
+@import 'custom';
 
 
 
 
 
 .navbar-laravel {
-  background-color: #fff;
+ 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }

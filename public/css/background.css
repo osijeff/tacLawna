@@ -1,0 +1,54 @@
+.contact-jubo{
+  background-image: url("../images/contactjobu.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: whitesmoke;
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+.sermon-section{
+  
+  background-image: url("../images/background04.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ 
+
+}
+
+.give{
+  
+  background-image: url("../images/background08.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ 
+
+}
+
+.blog{
+  
+  background-image: url("../images/background09.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: auto; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ 
+
+}
+
+.upcomingEvent{
+   background-image: url("../images/background03.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 150px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
